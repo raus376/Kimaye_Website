@@ -1,0 +1,328 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+/* Navbar starts Here */
+#nav {
+  background-color: #eeeeea;
+}
+
+#navbar {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.select {
+  display: flex;
+  width: 30%;
+}
+#select1,
+#select2 {
+  width: 30%;
+  border: none;
+  margin-left: 5px;
+  background-color: #eeeeea;
+}
+#select2 + p {
+  width: 30%;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.logo {
+  width: 15%;
+  margin-left: -100px;
+}
+.logo > img {
+  width: 100%;
+}
+
+.loginCart {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.loginCart > img {
+  width: 8%;
+  height: 20px;
+}
+.loginCart > p {
+  margin-left: -10px;
+}
+
+/* Navbar Ends Here */
+
+/* Main Heading starts here  */
+
+#container {
+  background-color: #f9f9f9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.headings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.redHeading {
+  width: 90%;
+}
+.redHeading > div {
+  display: flex;
+
+  background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/red-patch.png?v=1600154657");
+  width: 85%;
+}
+.redHeading > div:nth-child(2) {
+  margin-top: -20px;
+  width: 70%;
+}
+
+.redHeading > div > h1 {
+  padding-top: 50px;
+  margin-left: 20px;
+  font-family: "Caveat Brush", cursive;
+  margin-top: -10px;
+  font-size: 40px;
+  width: 100%;
+
+  height: 100%;
+}
+
+.red1 {
+  font-size: 25px;
+}
+.redHeading > div > h1 {
+  color: white;
+}
+.redHeading > button {
+  padding: 10px 20px 10px 20px;
+  background-color: #98cb4c;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  margin-top: 30px;
+}
+
+.greenHeading > img {
+  width: 50%;
+}
+.greenHeading > div > h1 {
+  width: 50%;
+  font-size: 80px;
+  margin-top: -10px;
+  margin-left: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: green;
+}
+
+.greenHeading > div > h2 {
+  width: 150%;
+  margin-left: -30px;
+  font-size: 40px;
+  color: #6b9543;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.htwo {
+  margin-top: -25px;
+}
+#image {
+  background-color: #f9f9f9;
+  top: 500px;
+}
+
+#image > img {
+  margin-left: 30%;
+  background-color: #f9f9f9;
+  position: relative;
+}
+.img1 > img {
+  width: 5%;
+  position: absolute;
+  top: 150px;
+  transform: rotate(120deg);
+  left: 70%;
+}
+.img2 > img {
+  width: 5%;
+  position: absolute;
+  bottom: 50px;
+  transform: rotate(-120deg);
+  left: 30%;
+}
+.img3 > img {
+  width: 5%;
+  position: absolute;
+  top: 600px;
+  transform: rotate(-120deg);
+  left: 15%;
+}
+#products {
+  background-color: #eeeeea;
+  padding: 30px;
+}
+#head {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+#head > h1 {
+  font-family: "Caveat Brush", cursive;
+  font-size: 60px;
+}
+#head > h1 + p {
+  font-family: sans-serif;
+  font-size: 22px;
+  margin-top: -30px;
+  color: gray;
+}
+
+#product-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 80%;
+  margin: auto;
+  gap: 40px;
+
+  margin-top: 50px;
+}
+#product-img > div {
+  text-align: center;
+  border-radius: 15px;
+}
+
+#product-img > div > img {
+  width: 100%;
+  border-radius: 15px;
+  transition: all 1s;
+}
+#product-img > div > img:hover {
+  transform: scale(1.1);
+}
+
+#product-img > div > h1 {
+  font-family: "Caveat Brush", cursive;
+}
+#product-img > div > p {
+  font-family: sans-serif;
+  margin-top: -15px;
+  font-size: 14px;
+}
+#product-img > div > button {
+  padding: 10px 25px 10px 25px;
+  color: white;
+  background-color: #cd171f;
+  border-radius: 25px;
+  border: none;
+}
+
+/* for medium screens */
+@media all and (min-width: 630px) and (max-width: 1000px) {
+  .headings {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .greenHeading > img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .greenHeading > div > h1 {
+    width: 80%;
+    font-size: 80px;
+    margin-top: -10px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  #image > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .img2 > img {
+    left: 80%;
+  }
+  .img1 > img {
+    left: 70%;
+  }
+  #head > h1 {
+    font-size: 40px;
+  }
+  #head > h1 + p {
+    font-size: 15px;
+    margin-top: -20px;
+  }
+}
+
+/* for small screens */
+@media all and (min-width: 100px) and (max-width: 630px) {
+  .headings {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .redHeading > div {
+    width: 55%;
+  }
+  .redHeading > div > h1 {
+    padding-top: 50px;
+    margin-left: 30px;
+    font-family: "Caveat Brush", cursive;
+    margin-top: -10px;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .greenHeading > img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .greenHeading > div > h1 {
+    width: 30%;
+    font-size: 40px;
+    /* margin-top: -10px;
+      margin-left: 50px; */
+    margin-left: 35%;
+    text-align: center;
+  }
+  .greenHeading > div > h2 {
+    width: 100%;
+    margin-left: -30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #image > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+
+  #head > h1 {
+    font-size: 30px;
+  }
+  #head > h1 + p {
+    font-size: 10px;
+    margin-top: -20px;
+  }
+  #product-img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+}
